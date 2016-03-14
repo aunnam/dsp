@@ -46,13 +46,14 @@ cross-platform.
 
 Did you install Python 2 or 3? Why?  
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Python 2 is what I have installed on the System by default and have kept it for now since both 2 and 3 are viable programming options. While python 3 may have a few new features, a lot of libraries in Python 2 havent been ported to Python 3 yet.
 
 ###Q2. Which Python Version Installed   
 
 How can you check the version of Python installed if you happen to be on an unfamiliar computer?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> You can check the version by typing the following command into the terminal...
+python --version
 
  
 
