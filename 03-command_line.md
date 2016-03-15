@@ -39,7 +39,13 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 'ls' : list files in current directory
+> > 'ls -a' : list files in current directory including hidden files not see by ls
+> > 'ls -l' : list files in current directory in long format and showing permissions
+> > 'ls -lh' : lists files in current directory in long format and showing permissions, but with more readable file sizes
+> > 'ls -lah' : lists everything that 'ls -lh' does but includes hidden files 
+> > 'ls -t' : lists files in current directory sorted by time and date
+> > 'ls -Glp' :
 
 ---
 
