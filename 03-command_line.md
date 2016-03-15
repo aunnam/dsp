@@ -13,7 +13,18 @@ these in a couple of hours.
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 1. ls : list files in current directory
+> > 2. cd .. : move up one level in directory structure
+> > 3. cd x : move into directory named x
+> > 4. cd : go to home directory
+> > 5. rm x : remove file named x within working directory
+> > 6. mv x y : rename file x to y within working directory
+> > 7. mkdir x : make directory x within working directory
+> > 8. rmdir x : remove directory x within working directory
+> > 9. pwd : print working directory
+> > 10. touch x : create a file named x
+> > 11. cp x y : copy file x to directory/file y
+> > 12. cp -r dir1 dir2 : copy directory dir1 to directory dir2
 
 ---
 
