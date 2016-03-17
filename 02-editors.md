@@ -59,7 +59,7 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What terminal editor will you use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> I will be using Emacs because it is what I have been using for the past 4 years through college.
 
 --
 
@@ -67,6 +67,6 @@ What terminal editor will you use? How did you make your decision?
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> I will be using Emacs because, as I said above, I have been using it for the past 4 years of college. Useful keyboard shortcuts are the various CTRL commands to save and exit windows such as CTRL-x-s and CTRL-x-c respectively. I have not really customized it as I dont think it requires it.
 
  
