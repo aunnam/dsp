@@ -45,7 +45,7 @@ What do the following commands do:
 > > 4. 'ls -lh' : lists files in current directory in long format and showing permissions, but with more readable file sizes
 > > 5. 'ls -lah' : lists everything that 'ls -lh' does but includes hidden files 
 > > 6. 'ls -t' : lists files in current directory sorted by time and date
-> > 7. 'ls -Glp' :
+> > 7. 'ls -Glp' : list files in current directory in long format and showing permissions but without appended slash indicators but no group names being printed
 
 ---
 
