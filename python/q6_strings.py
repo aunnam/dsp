@@ -18,8 +18,13 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
-    raise NotImplementedError
+    if count < 10:
+        return 'Number of donuts: %d' % count
+    else:
+        return 'many'
 
+print donuts(9)
+print donuts(11)
 
 def both_ends(s):
     """
@@ -37,7 +42,15 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
-    raise NotImplementedError
+    if len(s) < 2:
+        return ''
+    else:
+        return s[:2]+s[-2:]
+
+print both_ends('spring')
+print both_ends('Hello')
+print both_ends('a')
+print both_ends('xyz')
 
 
 def fix_start(s):
@@ -56,7 +69,16 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
-    raise NotImplementedError
+    first = s[0:1]
+    fix_string = first
+    for i in range(1,len(s)):
+        if s[i:i+1]==first:
+            fix_string += '*'
+        else:
+            fix_string += s[i:i+1]
+    return fix_string
+
+print fix_start('babble')
 
 
 def mix_up(a, b):
@@ -74,8 +96,10 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
-    raise NotImplementedError
+    return b[0:2] + a[2:] + ' ' + a[0:2] + b[2:]
 
+print mix_up('mix', 'pod')
+print mix_up('dog', 'dinner')
 
 def verbing(s):
     """
@@ -91,8 +115,16 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
-    raise NotImplementedError
-
+    if len(s) <  3:
+        return s
+    elif s[-3:]=='ing':
+        return s + 'ly'
+    else:
+        return s + 'ing'
+        
+print verbing('hail')
+print verbing('swimming')
+print verbing('do')
 
 def not_bad(s):
     """
@@ -111,7 +143,25 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
-    raise NotImplementedError
+    if len(s) < 6:
+        return s
+    else:
+        bad_index = -1
+        not_index = -1
+        for i in range(0,len(s)-2):
+            if s[i:i+3]=='bad':
+                bad_index = i
+            elif s[i:i+3]=='not':
+                not_index = i
+
+    if bad_index != -1 and not_index != -1 and bad_index > not_index:
+        return s[:not_index] + 'good' + s[bad_index+3:]
+    else:
+        return s
+
+print not_bad('This movie is not so bad') 
+print not_bad('This dinner is not that bad!')               
+print not_bad("It's bad yet not")        
 
 
 def front_back(a, b):
@@ -130,4 +180,21 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
-    raise NotImplementedError
+    if len(a)%2==0:
+        a_front = a[:len(a)/2]
+        a_back = a[len(a)/2:]
+    else:
+        a_front = a[:len(a)/2+1]
+        a_back = a[len(a)/2+1:]
+    if len(b)%2==0:
+        b_front = b[:len(b)/2]
+        b_back = b[len(b)/2:]
+    else:
+        b_front = b[:len(b)/2+1]
+        b_back = b[len(b)/2+1:]
+
+    return a_front + b_front + a_back + b_back
+
+print front_back('abcd', 'xy')
+print front_back('abcde', 'xyz')
+print front_back('Kitten', 'Donut')
