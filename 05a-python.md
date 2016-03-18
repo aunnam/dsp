@@ -46,7 +46,11 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> List comprehension is a concise way to create lists and is commonly used to create lists which can be made simply by doing certain operations to an input. 
+
+>> squares = [x**2 for x in range(8)] ///prints the first 8 square numbers starting at 0 and ending at 49
+
+>> 
 
 ---
 
