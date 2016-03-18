@@ -39,7 +39,6 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 >> f = lambda x, y : x + y
 
 >> sorted(['S', 'b', 'B', 'M'], key=lambda word: word.upper())
-
 >> Output: ['b', 'B', 'M', 'S']
 
 ---
