@@ -45,7 +45,7 @@ What do the following commands do:
 > > 4. 'ls -lh' : lists files in current directory in long format and showing permissions, but with more readable file sizes
 > > 5. 'ls -lah' : lists everything that 'ls -lh' does but includes hidden files 
 > > 6. 'ls -t' : lists files in current directory sorted by time and date
-> > 7. 'ls -Glp' : list files in current directory in long format and showing permissions but without appended slash indicators but no group names being printed
+> > 7. 'ls -Glp' : list files in current directory in long format and showing permissions but without appended slash directory indicators but no group names being printed
 
 ---
 
@@ -53,7 +53,11 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > ls -r : list files in current directory in reverse order
+> > ls -R : list files in current directory but also includes sub directories
+> > ls -u : list files in current directory sorted by access time
+> > ls -x : list files in current directory as rows across the screen
+> > ls -d : lists only directories within current directory
 
 ---
 
@@ -61,7 +65,6 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
-
- 
-
+> > xargs is a command on UNIX system that builds command lines with standard input parameters. 
+> > echo 1 2 3 4 5 6 | xargs -n 2   
+> > The above line runs the echo command on standard input of '1 2 3 4 5 6' with the restriction of passing 2 numbers at a time to the echo argument. So it prints the numbers from 1 to 6, 2 at a time on seperate lines.
