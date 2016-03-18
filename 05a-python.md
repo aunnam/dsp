@@ -50,7 +50,11 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 
 >> squares = [x**2 for x in range(8)] ///prints the first 8 square numbers starting at 0 and ending at 49
 
->> 
+>> foo = [1,2,3,4,5,6,7,8,9]
+
+>> foomap = map(lambda x: x * 2, foo) // foomap is a list of doubled values from foo
+
+>> foofilter = filter(lambda x: x % 2 == 0, foo) // foofilter is a list of all the even numbers from foo
 
 ---
 
