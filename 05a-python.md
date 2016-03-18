@@ -56,6 +56,13 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 
 >> foofilter = filter(lambda x: x % 2 == 0, foo) // foofilter is a list of all the even numbers from foo
 
+>> Map runs a function on all elements passed in as input to the map. Filter checks whether each each element passed in as input returns true for the function provided to filter, and returns only the elements which returned true.
+
+>> compset = {x for x in range(10) if x % 2 == 0} /// set comprehension of all the even numbers from 0 to 9
+
+>> compdict = {key: val for key, val in enumerate([1,2,3,4,5,6]) if val%2==0} /// dict comprehension of all even numbers from 1 to 6
+
+
 ---
 
 ###Complete the following problems by editing the files below:
