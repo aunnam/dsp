@@ -34,7 +34,13 @@ How are Python lists and sets similar and different? Give examples of using both
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Lambda is an operator used to create an effective throwaway function to perform an operation without having to create a function for it.
+
+>> f = lambda x, y : x + y
+
+>> sorted(['S', 'b', 'B', 'M'], key=lambda word: word.upper())
+
+>> Output: ['b', 'B', 'M', 'S']
 
 ---
 
