@@ -19,12 +19,18 @@ This data is available in this file:  [faculty.csv](python/faculty.csv)
 
 ####Q1. Find how many different degrees there are, and their frequencies: Ex:  PhD, ScD, MD, MPH, BSEd, MS, JD, etc.
 
->> REPLACE THIS WITH YOUR RESPONSE
+>> 
 
 
 ####Q2. Find how many different titles there are, and their frequencies:  Ex:  Assistant Professor, Professor
 
->> REPLACE THIS WITH YOUR RESPONSE
+>> Notably there is 1 'Assistant Professor is Biostatistics'. This is likely a typo and the 'is' was intended to be an 'of, so we will consider this a member of 'Assistant Professor of Biostatistics'. This means there are actually 3 distinct titles.
+
+>> Associate Professor of Biostatistics: 12
+
+>> Assistant Professor of Biostatistics: 13
+
+>> Professor of Biostatistics: 13
 
 
 ####Q3. Search for email addresses and put them in a list.  Print the list of email addresses.
