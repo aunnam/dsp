@@ -19,7 +19,11 @@ This data is available in this file:  [faculty.csv](python/faculty.csv)
 
 ####Q1. Find how many different degrees there are, and their frequencies: Ex:  PhD, ScD, MD, MPH, BSEd, MS, JD, etc.
 
->> 
+>> dict_items([('MD', 1), ('MA', 1), ('0', 1), ('MPH', 2), ('Ph.D.', 17), ('M.S.', 1), ('JD', 1), ('Ph.D', 5), ('PhD', 9), ('MS', 1), ('ScD', 2), ('Sc.D.', 4), ('B.S.Ed.', 1)])
+ 
+>> The above shows 12 different degrees with their frequences, but some have written equivalent degrees such as 'Ph.D' meaning the same as 'PhD' and 'Ph.D.' in reality. So we can compile the results and fix variation to get the below result of 8 distinct degrees with 1 person having no degree whatsoever
+
+>> dict_items([('MD', 1), ('MA', 1), ('0', 1), ('MPH', 2), ('PhD', 31), ('MS', 2), ('JD', 1), ('ScD', 6), ('B.S.Ed.', 1)])
 
 
 ####Q2. Find how many different titles there are, and their frequencies:  Ex:  Assistant Professor, Professor

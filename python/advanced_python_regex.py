@@ -30,12 +30,31 @@ def emailList(data):
         emails += [row[3]]
     return emails
 
+def domainDict(data):
+    emails = emailList(data)
+    dictDomain = {}
+    for email in emails:
+        user, domain = email.split('@')
+        if domain in dictDomain:
+            dictDomain[domain] += 1
+        else:
+            dictDomain[domain] = 1
+    return dictDomain
+
 facultyFile = open('faculty.csv')
 facultyReader = csv.reader(facultyFile)
 facultyData = list(facultyReader)
 
 # print(titleDict(facultyData).items())
-print(degreeDict(facultyData).items())
+# print(degreeDict(facultyData).items())
+
+domainDictionary = domainDict(facultyData)
+
+print(domainDictionary.items())
+
+for k,v in domainDictionary.items():
+    if v == 1:
+        print(k+ " is a unique email domain")
 
 print(facultyData[0])
 # print(emailList(facultyData))
