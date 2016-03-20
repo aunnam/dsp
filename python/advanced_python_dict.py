@@ -62,6 +62,6 @@ q7Dictionary = q7Dict(facultyData)
 first3pairs(q6Dictionary)
 print()
 first3pairs(q7Dictionary)
-
-#q8DictPrint(facultyData)
+print()
+q8DictPrint(facultyData)
 

@@ -2,7 +2,7 @@
 import csv
 import sys
 
-def titleFreq(data):
+def titleDict(data):
     dictTitles = {}
     for row in data[1:]:
         title = row[2]
@@ -10,17 +10,19 @@ def titleFreq(data):
             dictTitles[title] += 1
         else:
             dictTitles[title] = 1
-    return dictTitles.items()
+    return dictTitles
 
-def degreeFreq(data):
+def degreeDict(data):
     dictDegrees = {}
     for row in data[1:]:
-        degree = row[1]
-        if degree in dictDegrees:
-            dictDegrees[degree] += 1
-        else:
-            dictDegrees[degree] = 1
-    return dictDegrees.items()
+        degree = row[1].split(' ')
+        for x in range(len(degree)):            
+            if degree[x] != '':
+                if degree[x] in dictDegrees:
+                    dictDegrees[degree[x]] += 1
+                else:
+                    dictDegrees[degree[x]] = 1
+    return dictDegrees
 
 def emailList(data):
     emails = []
@@ -32,8 +34,8 @@ facultyFile = open('faculty.csv')
 facultyReader = csv.reader(facultyFile)
 facultyData = list(facultyReader)
 
-print(titleFreq(facultyData))
-print(degreeFreq(facultyData))
+# print(titleDict(facultyData).items())
+print(degreeDict(facultyData).items())
 
 print(facultyData[0])
-print(emailList(facultyData))
+# print(emailList(facultyData))
