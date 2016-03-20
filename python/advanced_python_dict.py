@@ -34,6 +34,16 @@ def q7Dict(data):
         dict2[(firstName,lastName)] = row[1:]
     return dict2
 
+def first3pairs(dictionary):
+    count = 0
+    for k,v in dictionary.items():
+        if count == 3:
+            break
+        else:
+            print(k,v)
+            count += 1
+    return
+
 def q8DictPrint(data):
     dict2 = q7Dict(data)
     sortedkeys = sorted(dict2, key=lambda key: key[1])
@@ -49,12 +59,9 @@ def q8DictPrint(data):
 q6Dictionary = q6Dict(facultyData)
 q7Dictionary = q7Dict(facultyData)
 
-q8DictPrint(facultyData)
+first3pairs(q6Dictionary)
+print()
+first3pairs(q7Dictionary)
 
+#q8DictPrint(facultyData)
 
-# count = 0
-# for key,value in q6Dictionary:
-#     if count == 3:
-#         break
-#     print(key, value)
-#     count += 1
