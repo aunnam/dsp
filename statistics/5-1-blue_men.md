@@ -22,4 +22,9 @@ type(dist)
 print('Percent of Males below 5 10:', 100*dist.cdf(177.8),'%') # 5' 10" = 177.8 cm
 print('Percent of Males above 6 1:', 100*dist.cdf(185.42),'%') # 6' 1" = 185.42 cm
 print('Percent of Males between 5 10 and 6 1:', 100*(dist.cdf(185.42)-dist.cdf(177.8)),'%')
+
+# Output:
+# Percent of Males below 5 10: 48.9639027865 %
+# Percent of Males above 6 1: 83.2385865496 %
+# Percent of Males between 5 10 and 6 1: 34.2746837631 %
 ```
