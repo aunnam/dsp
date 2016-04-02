@@ -3,6 +3,7 @@
 >> The means for actual distribution of number of childern under 18 in a household versus the biased survey of children regarding the number of children under 18 in a household is below.
 
 >> actual pmf mean: 1.02420515504
+
 >> biased pmf mean: 2.40367910066
 
 >> This shows that children believe there are more children under 18 in a household than there actually are. In fact their estimate is over double the actual value.
@@ -54,4 +55,8 @@ thinkplot.Show()
 
 print('actual pmf mean:', pmf.Mean())
 print('biased pmf mean:', biased.Mean())
+
+# Output:
+# actual pmf mean: 1.02420515504
+# biased pmf mean: 2.40367910066
 ```
